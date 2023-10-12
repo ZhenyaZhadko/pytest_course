@@ -5,7 +5,7 @@ import time
 driver = webdriver.Chrome()
 
 
-def test_add_product_to_cart():
+def test_add_product_to_cart_from_product_card():
     driver.get("https://www.saucedemo.com/")
 
     username_field = driver.find_element(By.XPATH, '//input[@data-test="username"]')
@@ -17,11 +17,13 @@ def test_add_product_to_cart():
     login_button = driver.find_element(By.XPATH, '//input[@data-test="login-button"]')
     login_button.click()
 
-    backpack_title_in_catalog = driver.find_element(By.XPATH, '//div[contains(text(), "Sauce Labs Backpack")]').text
+    go_to_backpack_card_link = driver.find_element(By.XPATH, '//div[contains(text(), "Sauce Labs Backpack")]')
+    go_to_backpack_card_link.click()
 
     time.sleep(2)
-    add_to_cart_backpack = driver.find_element(By.XPATH, '//button[@data-test="add-to-cart-sauce-labs-backpack"]')
-    add_to_cart_backpack.click()
+    backpack_title_in_product_card = driver.find_element(By.XPATH, '//div[contains(text(), "Sauce Labs Backpack")]').text
+    add_backpack_to_cart_button = driver.find_element(By.XPATH, '//button[@data-test="add-to-cart-sauce-labs-backpack"]')
+    add_backpack_to_cart_button.click()
 
     time.sleep(2)
     shopping_cart_badge = driver.find_element(By.XPATH, '//span[@class="shopping_cart_badge"]')
@@ -33,6 +35,6 @@ def test_add_product_to_cart():
     link_to_open_cart.click()
 
     backpack_title_in_cart = driver.find_element(By.XPATH, '//div[contains(text(), "Sauce Labs Backpack")]').text
-    assert backpack_title_in_cart == backpack_title_in_catalog
+    assert backpack_title_in_cart == backpack_title_in_product_card
 
     driver.quit()

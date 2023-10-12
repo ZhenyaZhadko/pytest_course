@@ -17,8 +17,6 @@ def test_backpack_add_to_cart():
     login_button = driver.find_element(By.XPATH, '//input[@data-test="login-button"]')
     login_button.click()
 
-    backpack_title_in_catalog = driver.find_element(By.XPATH, '//div[contains(text(), "Sauce Labs Backpack")]').text
-
     time.sleep(2)
     add_to_cart_backpack = driver.find_element(By.XPATH, '//button[@data-test="add-to-cart-sauce-labs-backpack"]')
     add_to_cart_backpack.click()

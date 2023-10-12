@@ -5,7 +5,6 @@ import time
 driver = webdriver.Chrome()
 
 
-
 def test_login_with_invalid_credentials():
     driver.get("https://www.saucedemo.com/")
 
