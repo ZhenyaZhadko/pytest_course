@@ -24,8 +24,8 @@ def test_sorting_a_z():
         lst_sorted_a_z_products_titles.append(driver.find_element(By.XPATH,
                                                                   f'//div[@class="inventory_item"][{product}]//div[@class="inventory_item_name"]').text)
 
-    # creating sorted list from lst_sorted_a_z_products_titles
-    check_lst_sorted_a_z_products_titles = sorted(lst_sorted_a_z_products_titles)
+    # creating sorted list from lst_sorted_a_z_products_titles, flag reverse=False
+    check_lst_sorted_a_z_products_titles = sorted(lst_sorted_a_z_products_titles, reverse=False)
 
     assert lst_sorted_a_z_products_titles == check_lst_sorted_a_z_products_titles
 
