@@ -18,7 +18,8 @@ def test_remove_product_from_cart_on_product_card_page():
     login_button.click()
 
     time.sleep(2)
-    add_backpack_to_cart_from_catalog = driver.find_element(By.XPATH, '//button[@data-test="add-to-cart-sauce-labs-backpack"]')
+    add_backpack_to_cart_from_catalog = driver.find_element(By.XPATH,
+                                                            '//button[@data-test="add-to-cart-sauce-labs-backpack"]')
     add_backpack_to_cart_from_catalog.click()
 
     time.sleep(2)

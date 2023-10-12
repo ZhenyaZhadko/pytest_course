@@ -23,7 +23,8 @@ def test_add_product_to_cart_from_product_card():
     backpack_image.click()
 
     time.sleep(2)
-    backpack_title_in_product_card = driver.find_element(By.XPATH, '//div[@class="inventory_details_name large_size"]').text
+    backpack_title_in_product_card = driver.find_element(By.XPATH,
+                                                         '//div[@class="inventory_details_name large_size"]').text
     assert backpack_title_in_catalog == backpack_title_in_product_card
 
     driver.quit()
