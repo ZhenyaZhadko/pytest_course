@@ -18,10 +18,13 @@ def test_sorting_a_z():
 
     lst_products = driver.find_elements(By.XPATH, '//div[@class="inventory_item_name"]')
     lst_sorted_a_z_products_titles = []
-    product_title = driver.find_element
+
     # creating list of titles of sorted products
     for product in range(1, len(lst_products) + 1):
-        lst_sorted_a_z_products_titles.append(driver.find_element(By.XPATH, f'//div[@class="inventory_item"][{product}]//div[@class="inventory_item_name"]').text)
+        lst_sorted_a_z_products_titles.append(driver.find_element(By.XPATH,
+                                                                  f'//div[@class="inventory_item"][{product}]//div[@class="inventory_item_name"]').text)
+
+    # creating sorted list from lst_sorted_a_z_products_titles
     check_lst_sorted_a_z_products_titles = sorted(lst_sorted_a_z_products_titles)
 
     assert lst_sorted_a_z_products_titles == check_lst_sorted_a_z_products_titles
