@@ -5,7 +5,7 @@ import time
 driver = webdriver.Chrome()
 
 
-def test_logout():
+def test_logout_sidebar_link():
     driver.get("https://www.saucedemo.com/")
 
     login_logo_text = driver.find_element(By.XPATH, "//div[@class='login_logo']").text

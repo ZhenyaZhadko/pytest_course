@@ -11,3 +11,4 @@ LOGIN_LOGO_TEXT = "//div[@class='login_logo']"
 BURGER_MENU_BUTTON = '//button[@id="react-burger-menu-btn"]'
 LOGOUT_SIDEBAR_LINK = '//a[@id="logout_sidebar_link"]'
 ABOUT_SIDEBAR_LINK = '//a[@id="about_sidebar_link"]'
+RESET_SIDEBAR_LINK = '//a[@id="reset_sidebar_link"]'
