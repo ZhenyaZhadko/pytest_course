@@ -34,7 +34,10 @@ HEADER_SHOPPING_CART_BADGE = '//span[@class="shopping_cart_badge"]'
 # SHOPPING_CART
 ALL_CART_ITEMS = '// div[@class ="cart_item"]'
 SHOPPING_CART_BACKPACK_ITEM_TITLE = '//a[@id="item_4_title_link"]/div'
+SHOPPING_CART_REMOVE_BACKPACK_ITEM_BUTTON = '//button[@data-test="remove-sauce-labs-backpack"]'
+SHOPPING_CART_REMOVED_ITEM = '//div[@class="removed_cart_item"]'
 
 #  PRODUCT_CARD
 PRODUCT_TITLE_IN_PRODUCT_CARD = '//div[@class="inventory_details_name large_size"]'
 PRODUCT_CARD_BACKPACK_ADD_TO_CART_BUTTON = '//button[@data-test="add-to-cart-sauce-labs-backpack"]'
+PRODUCT_CARD_REMOVE_SAUCE_LABS_BACKPACK_BUTTON = '//button[@data-test="remove-sauce-labs-backpack"]'
