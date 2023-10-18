@@ -29,8 +29,6 @@ def test_sorting_z_a():
 
     # creating reversely sorted list from lst_sorted_a_z_products_titles, flag reverse=True
     check_lst_sorted_z_a_products_titles = sorted(lst_sorted_z_a_products_titles, reverse=True)
-    print(lst_sorted_z_a_products_titles)
-    print(check_lst_sorted_z_a_products_titles)
 
     assert lst_sorted_z_a_products_titles == check_lst_sorted_z_a_products_titles
 

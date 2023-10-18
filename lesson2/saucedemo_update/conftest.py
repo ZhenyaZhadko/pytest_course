@@ -25,3 +25,5 @@ def login(driver):
 def open_burger_menu(driver, login):
     driver.find_element(By.XPATH, BURGER_MENU_BUTTON).click()
     yield
+
+

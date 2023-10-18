@@ -19,5 +19,22 @@ HIGH_LOW_SORTING_OPTION = '//select[@class="product_sort_container"]/option[@val
 
 # INVENTORY_PAGE
 INVENTORY_ANY_ITEM_NAME = '//div[@class="inventory_item_name"]'
+INVENTORY_ANY_ITEM_PRICE = '//div[@class="inventory_item_price"]'
 INVENTORY_ANY_ITEM = '//div[@class="inventory_item"]'
+INVENTORY_ADD_SAUCE_LABS_BACKPACK_BUTTON = '//button[@data-test="add-to-cart-sauce-labs-backpack"]'
+INVENTORY_REMOVE_SAUCE_LABS_BACKPACK_BUTTON = '//button[@data-test="remove-sauce-labs-backpack"]'
+INVENTORY_BACKPACK_ITEM_TITLE_LINK = '//a[@id="item_4_title_link"]'
+INVENTORY_BACKPACK_ITEM_TITLE = '//a[@id="item_4_title_link"]/div'
+INVENTORY_BACKPACK_ITEM_IMAGE = '//a[@id="item_4_img_link"]/img'
 
+#  HEADER
+HEADER_SHOPPING_CART_LINK = '//a[@class="shopping_cart_link"]'
+HEADER_SHOPPING_CART_BADGE = '//span[@class="shopping_cart_badge"]'
+
+# SHOPPING_CART
+ALL_CART_ITEMS = '// div[@class ="cart_item"]'
+SHOPPING_CART_BACKPACK_ITEM_TITLE = '//a[@id="item_4_title_link"]/div'
+
+#  PRODUCT_CARD
+PRODUCT_TITLE_IN_PRODUCT_CARD = '//div[@class="inventory_details_name large_size"]'
+PRODUCT_CARD_BACKPACK_ADD_TO_CART_BUTTON = '//button[@data-test="add-to-cart-sauce-labs-backpack"]'
