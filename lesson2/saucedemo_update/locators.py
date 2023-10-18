@@ -28,7 +28,7 @@ INVENTORY_BACKPACK_ITEM_TITLE = '//a[@id="item_4_title_link"]/div'
 INVENTORY_BACKPACK_ITEM_IMAGE = '//a[@id="item_4_img_link"]/img'
 
 #  HEADER
-HEADER_SHOPPING_CART_LINK = '//a[@class="shopping_cart_link"]'
+HEADER_OPEN_SHOPPING_CART_LINK = '//a[@class="shopping_cart_link"]'
 HEADER_SHOPPING_CART_BADGE = '//span[@class="shopping_cart_badge"]'
 
 # SHOPPING_CART
@@ -36,6 +36,16 @@ ALL_CART_ITEMS = '// div[@class ="cart_item"]'
 SHOPPING_CART_BACKPACK_ITEM_TITLE = '//a[@id="item_4_title_link"]/div'
 SHOPPING_CART_REMOVE_BACKPACK_ITEM_BUTTON = '//button[@data-test="remove-sauce-labs-backpack"]'
 SHOPPING_CART_REMOVED_ITEM = '//div[@class="removed_cart_item"]'
+SHOPPING_CART_CHECKOUT_BUTTON = '//button[@data-test="checkout"]'
+
+#  CHECKOUT
+CHECKOUT_FIRST_NAME_INPUT = '//input[@data-test="firstName"]'
+CHECKOUT_LAST_NAME_INPUT = '//input[@data-test="lastName"]'
+CHECKOUT_POSTAL_CODE_INPUT = '//input[@data-test="postalCode"]'
+CHECKOUT_CONTINUE_AFTER_FILLING_PERSONAL_DATA_BUTTON = '//input[@data-test="continue"]'
+CHECKOUT_FINISH_BUTTON = '//button[@data-test="finish"]'
+CHECKOUT_PAGE_TITLE = '//span[@class="title"]'
+CHECKOUT_COMPLETE_HEADER = '//h2[@class="complete-header"]'
 
 #  PRODUCT_CARD
 PRODUCT_TITLE_IN_PRODUCT_CARD = '//div[@class="inventory_details_name large_size"]'
