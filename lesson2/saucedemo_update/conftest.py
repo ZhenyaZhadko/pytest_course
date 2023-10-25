@@ -4,6 +4,7 @@ from locators import USERNAME_FIELD, PASSWORD_FIELD, LOGIN_BUTTON, BURGER_MENU_B
 from data import VALID_LOGIN, VALID_PASSWORD, MAIN_PAGE
 from selenium.webdriver.common.by import By
 
+
 @pytest.fixture()
 def driver():
     driver = webdriver.Chrome()
