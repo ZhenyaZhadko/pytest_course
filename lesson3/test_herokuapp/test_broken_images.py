@@ -23,4 +23,4 @@ def test_broken_images(driver):
         else:
             list_correct_links.append(link)
 
-    assert len(list_broken_links) == 0, f"\nThere're {len(list_broken_links)} broken link(s): {list_broken_links} \nThere're {len(list_correct_links)} correct link(s): {list_correct_links}"
+    assert len(list_broken_links) == 0, f"\n{len(list_broken_links)} broken link(s): {list_broken_links} \n{len(list_correct_links)} correct link(s): {list_correct_links}"
