@@ -9,3 +9,7 @@ TEXT_SUCCESSFUL_AUTH = '//p[contains(text(), "Congratulations!")]'
 
 # BROKEN IMAGES PAGE
 IMG_ANY = '//div[@class="example"]/img'
+
+# CHECKBOXES PAGE
+TICKED_CHECKBOX_ANY = '//input[@type="checkbox" and @checked]'
+NOT_TICKED_CHECKBOX_ANY = '//input[@type="checkbox" and not(@checked)]'
