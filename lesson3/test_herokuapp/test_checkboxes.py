@@ -30,7 +30,7 @@ def test_untick_all_checkboxes(driver):
     assert len(list_ticked_checkboxes_after) == num_ticked_checkboxes_before + 1
 
     for checkbox in range(1, len(list_ticked_checkboxes_after) + 1):
-        driver.find_element(By.XPATH,f'{TICKED_CHECKBOX_ANY}[1]').click()
+        driver.find_element(By.XPATH, f'{TICKED_CHECKBOX_ANY}[1]').click()
 
     num_ticked_checkboxes_after_unticking_all = len(driver.find_elements(By.XPATH, TICKED_CHECKBOX_ANY))
     assert num_ticked_checkboxes_after_unticking_all == 0
