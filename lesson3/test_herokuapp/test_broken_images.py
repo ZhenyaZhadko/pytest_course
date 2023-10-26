@@ -15,9 +15,12 @@ def test_broken_images(driver):
         list_img_links.append(image_link)
 
     list_broken_links = []
+    list_correct_links = []
     for link in list_img_links:
         response = requests.get(link)
         if response.status_code != STATUS_CODE_OK:
             list_broken_links.append(link)
+        else:
+            list_correct_links.append(link)
 
-    assert len(list_broken_links) == 0, f"Broken links: {list_broken_links}"
+    assert len(list_broken_links) == 0, f"\nBroken links are: {list_broken_links} \nCorrect links are: {list_correct_links}"
